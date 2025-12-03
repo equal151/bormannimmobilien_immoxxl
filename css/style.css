@@ -1,5 +1,5 @@
 /* Container für Hero */
-.hero-container {
+.equal-hero-container {
     position: relative;
     width: 100%;
     height: 100vh; /* voller Bildschirm */
@@ -8,7 +8,7 @@
     margin: 0;
 }
 
-.hero-container img {
+.equal-hero-container img {
     width: 100%;
     height: 100%;
     object-fit: cover; /* Bild immer voll ausgefüllt */
@@ -19,7 +19,7 @@
 }
 
 /* Box unten links */
-.hero-box {
+.equal-hero-box {
     position: absolute;
     bottom: 80px;
     left: 200px;
@@ -32,25 +32,25 @@
     backdrop-filter: blur(4px);
 }
 
-.hero-box h1 {
+.equal-hero-box h1 {
     margin: 0 0 10px 0;
     font-size: 32px;
     line-height: 1.1;
 }
 
-.hero-box p {
+.equal-hero-box p {
     margin: 0 0 20px 0;
     font-size: 16px;
     opacity: 0.9;
 }
 
 /* Buttons */
-.hero-buttons {
+.equal-hero-buttons {
     display: flex;
     gap: 12px;
 }
 
-.hero-buttons a {
+.equal-hero-buttons a {
     padding: 12px 20px;
     background: #ffffff;
     color: #000;
@@ -60,27 +60,27 @@
     transition: 0.2s;
 }
 
-.hero-buttons a:hover {
+.equal-hero-buttons a:hover {
     background: #dcdcdc;
 }
 
-.hero-buttons .secondary {
+.equal-hero-buttons .equal-secondary {
     background: rgba(255, 255, 255, 0.2);
     color: #fff;
 }
 
-.hero-buttons .secondary:hover {
+.equal-hero-buttons .equal-secondary:hover {
     background: rgba(255, 255, 255, 0.35);
 }
 
 /* Mobil-Anpassung */
 @media (max-width: 650px) {
-    .hero-box {
+    .equal-hero-box {
         left: 20px;
         right: 20px;
         bottom: 20px;
     }
-    .hero-box h1 {
+    .equal-hero-box h1 {
         font-size: 26px;
     }
 }
