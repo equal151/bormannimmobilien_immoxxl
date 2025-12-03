@@ -1,62 +1,67 @@
-/* Container für Hero */
+/* HERO-GESAMTFLÄCHE */
 .equal-hero-container {
     position: relative;
     width: 100%;
-    height: 100vh; /* voller Bildschirm */
+    height: 100vh; /* immer ganze Höhe */
     overflow: hidden;
     padding: 0;
     margin: 0;
 }
 
+/* Hintergrundbild */
 .equal-hero-container img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Bild immer voll ausgefüllt */
+    object-fit: cover;
+    object-position: center; /* immer mittig */
     position: absolute;
     top: 0;
     left: 0;
     z-index: 1;
 }
 
-/* Box unten links */
+/* HERO BOX – vergrößert */
 .equal-hero-box {
     position: absolute;
-    bottom: 80px;
-    left: 200px;
-    background: rgba(0, 0, 0, 0.6); /* dunkler abgesetzter Hintergrund */
-    padding: 25px 30px;
-    border-radius: 12px;
+    bottom: 50px;
+    left: 50px;
+    background: rgba(0, 0, 0, 0.65);
+    padding: 40px 50px;
+    border-radius: 18px;
+    max-width: 520px;
     z-index: 2;
-    max-width: 420px;
     color: #fff;
-    backdrop-filter: blur(4px);
+    backdrop-filter: blur(6px);
 }
 
+/* Größerer Text */
 .equal-hero-box h1 {
-    margin: 0 0 10px 0;
-    font-size: 32px;
+    margin: 0 0 15px 0;
+    font-size: 42px;
     line-height: 1.1;
 }
 
 .equal-hero-box p {
-    margin: 0 0 20px 0;
-    font-size: 16px;
-    opacity: 0.9;
+    margin: 0 0 25px 0;
+    font-size: 20px;
+    opacity: 0.92;
 }
 
-/* Buttons */
+/* Mehr Platz für Buttons */
 .equal-hero-buttons {
     display: flex;
-    gap: 12px;
+    gap: 16px;
+    flex-wrap: wrap;
 }
 
 .equal-hero-buttons a {
-    padding: 12px 20px;
+    padding: 15px 26px;
     background: #ffffff;
     color: #000;
     font-weight: bold;
     text-decoration: none;
-    border-radius: 8px;
+    border-radius: 10px;
+    font-size: 18px;
     transition: 0.2s;
 }
 
@@ -64,23 +69,66 @@
     background: #dcdcdc;
 }
 
-.equal-hero-buttons .equal-secondary {
-    background: rgba(255, 255, 255, 0.2);
+.equal-hero-buttons .secondary {
+    background: rgba(255, 255, 255, 0.25);
     color: #fff;
 }
 
-.equal-hero-buttons .equal-secondary:hover {
+.equal-hero-buttons .secondary:hover {
     background: rgba(255, 255, 255, 0.35);
 }
 
-/* Mobil-Anpassung */
+/* Tablet Optimierung */
+@media (max-width: 1024px) {
+
+    .equal-hero-box {
+        max-width: 500px;
+        padding: 35px 40px;
+        bottom: 40px;
+        left: 40px;
+    }
+
+    .equal-hero-box h1 {
+        font-size: 36px;
+    }
+
+    .equal-hero-box p {
+        font-size: 18px;
+    }
+
+    .equal-hero-buttons a {
+        font-size: 17px;
+        padding: 14px 22px;
+    }
+}
+
+/* Handy Optimierung */
 @media (max-width: 650px) {
+
+    .equal-hero-container {
+        height: 85vh;
+    }
+
     .equal-hero-box {
         left: 20px;
         right: 20px;
         bottom: 20px;
+        padding: 28px 28px;
+        max-width: 100%;
     }
+
     .equal-hero-box h1 {
-        font-size: 26px;
+        font-size: 28px;
+    }
+
+    .equal-hero-box p {
+        font-size: 16px;
+    }
+
+    .equal-hero-buttons a {
+        font-size: 16px;
+        padding: 12px 18px;
+        flex: 1; /* Buttons füllen Breite */
+        text-align: center;
     }
 }
