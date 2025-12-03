@@ -23,12 +23,12 @@
 /* HERO BOX – vergrößert */
 .equal-hero-box {
     position: absolute;
-    bottom: 50px;
-    left: 50px;
+    bottom: 200px;
+    left: 100px;
     background: rgba(0, 0, 0, 0.65);
     padding: 40px 50px;
     border-radius: 18px;
-    max-width: 520px;
+    max-width: 600px;
     z-index: 2;
     color: #fff;
     backdrop-filter: blur(6px);
@@ -39,12 +39,15 @@
     margin: 0 0 15px 0;
     font-size: 42px;
     line-height: 1.1;
+    font-weight: 700;
+    color: #c60004;
 }
 
 .equal-hero-box p {
     margin: 0 0 25px 0;
     font-size: 20px;
     opacity: 0.92;
+    line-height: 2.5rem;
 }
 
 /* Mehr Platz für Buttons */
@@ -55,27 +58,28 @@
 }
 
 .equal-hero-buttons a {
-    padding: 15px 26px;
-    background: #ffffff;
+    padding: 25px 36px;
+    background: #c60004;
     color: #000;
     font-weight: bold;
     text-decoration: none;
     border-radius: 10px;
-    font-size: 18px;
+    font-size: 32px;
     transition: 0.2s;
 }
 
 .equal-hero-buttons a:hover {
-    background: #dcdcdc;
+    background: #c6292d;
 }
 
-.equal-hero-buttons .secondary {
+.equal-hero-buttons .equal-secondary {
     background: rgba(255, 255, 255, 0.25);
+    border-color: #c60004;
     color: #fff;
 }
 
 .equal-hero-buttons .secondary:hover {
-    background: rgba(255, 255, 255, 0.35);
+    background: #c60004;
 }
 
 /* Tablet Optimierung */
