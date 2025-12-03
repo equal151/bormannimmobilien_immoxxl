@@ -4,6 +4,8 @@
     width: 100%;
     height: 100vh; /* voller Bildschirm */
     overflow: hidden;
+    padding: 0;
+    margin: 0;
 }
 
 .hero-container img {
